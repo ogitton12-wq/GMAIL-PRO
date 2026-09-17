@@ -1,8 +1,7 @@
 const CLIENT_ID = "399570878423-0sk3n1k6uq4kllego97dtabgh2rv7dn0.apps.googleusercontent.com";
 
 const SCOPES =
-  "https://www.googleapis.com/auth/gmail.modify " +
-  "https://www.googleapis.com/auth/gmail.send";
+  "https://www.googleapis.com/auth/gmail.readonly";
 
 let accessToken = null;
 let currentFolder = "INBOX";
