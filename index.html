@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Gmail Pro</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="https://accounts.google.com/gsi/client" async defer></script>
+</head>
+
+<body>
+  <header>
+    <h1>Gmail Pro</h1>
+    <button id="loginBtn">Se connecter avec Google</button>
+  </header>
+
+  <main>
+    <aside>
+      <button data-folder="INBOX">📥 Boîte de réception</button>
+      <button data-folder="STARRED">⭐ Suivis</button>
+      <button data-folder="SENT">📤 Envoyés</button>
+      <button data-folder="DRAFT">📝 Brouillons</button>
+      <button data-folder="TRASH">🗑️ Corbeille</button>
+      <button id="composeBtn">✏️ Nouveau message</button>
+    </aside>
+
+    <section>
+      <input id="searchInput" type="search" placeholder="Rechercher dans Gmail">
+      <button id="searchBtn">Rechercher</button>
+      <button id="refreshBtn">↻</button>
+
+      <p id="status">Connecte-toi avec ton compte professionnel.</p>
+      <div id="messageList"></div>
+    </section>
+  </main>
+
+  <div id="reader" class="hidden">
+    <div class="box">
+      <button id="closeReader">×</button>
+      <div id="readerContent"></div>
+    </div>
+  </div>
+
+  <div id="composer" class="hidden">
+    <div class="box">
+      <button id="closeComposer">×</button>
+      <h2>Nouveau message</h2>
+
+      <input id="to" type="email" placeholder="Destinataire">
+      <input id="subject" type="text" placeholder="Objet">
+      <textarea id="body" rows="10" placeholder="Votre message"></textarea>
+
+      <button id="sendBtn">Envoyer</button>
+    </div>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>
