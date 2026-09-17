@@ -1,4 +1,4 @@
-const CLIENT_ID = "TON_CLIENT_ID_ICI.apps.googleusercontent.com";
+const CLIENT_ID = "399570878423-0sk3n1k6uq4kllego97dtabgh2rv7dn0.apps.googleusercontent.com";
 
 const SCOPES =
   "https://www.googleapis.com/auth/gmail.modify " +
